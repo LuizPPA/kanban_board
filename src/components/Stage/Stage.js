@@ -20,6 +20,13 @@ const Stage = (props) => {
     "borderBottom": "2px solid "+props.color
   }
 
+  const weak = {
+    "color": "rgb(190, 190, 190)",
+    "fontSize": "22px",
+    "textAlign": "center",
+    "marginTop": "45%"
+  }
+
   // Add a gray border to the left if stage isn't hte first
   if (props.id) {
     section["borderLeft"] = "1px solid #ccc"
@@ -39,6 +46,8 @@ const Stage = (props) => {
       />
     )
   })
+
+  if(tasks.length === 0) tasks = (<p style={weak}>No tasks at this stage</p>)
 
   return (
     <div style={section} className="col-md-3">
