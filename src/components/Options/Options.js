@@ -46,39 +46,39 @@ class Options extends Component {
   render(){
 
     const fullWidth = {
-      "width": "100%"
+      'width': '100%'
     }
 
     const timeInput = {
-      "width": "20%",
-      "display": "inline-block",
-      "marginRight": "10px"
+      'width': '20%',
+      'display': 'inline-block',
+      'marginRight': '10px'
     }
 
     return (
-      <div className="bar">
-        <div data-toggle="modal" data-target="#newTask">
-          <span className="glyphicon glyphicon-plus icon"></span><span className="option"> Create Task</span>
+      <div className='bar'>
+        <div data-toggle='modal' data-target='#newTask'>
+          <span className='glyphicon glyphicon-plus icon'></span><span className='option'> Create Task</span>
         </div>
         <span></span>
-        <div className="modal fade" id="newTask" role="dialog">
-          <div className="modal-panel">
-            <div className="modal-header">
-              <button type="button" className="close" data-dismiss="modal">&times;</button>
-              <h4 className="modal-title">New Task</h4>
+        <div className='modal fade' id='newTask' role='dialog'>
+          <div className='modal-panel'>
+            <div className='modal-header'>
+              <button type='button' className='close' data-dismiss='modal'>&times;</button>
+              <h4 className='modal-title'>New Task</h4>
             </div>
-            <div className="modal-body">
-              <label style={fullWidth} className="form-group">
+            <div className='modal-body'>
+              <label style={fullWidth} className='form-group'>
                 Name
-                <input style={fullWidth} className="form-control" type="text" value={this.state.newTask.name} onChange={(event) => this.handleChangeOn('name', event.target.value)} />
+                <input style={fullWidth} className='form-control' type='text' value={this.state.newTask.name} onChange={(event) => this.handleChangeOn('name', event.target.value)} />
               </label>
-              <label style={fullWidth} className="form-group">
+              <label style={fullWidth} className='form-group'>
                 Description
-                <textarea style={fullWidth} className="form-control" rows="6" value={this.state.newTask.description} onChange={(event) => this.handleChangeOn('description', event.target.value)}></textarea>
+                <textarea style={fullWidth} className='form-control' rows='6' value={this.state.newTask.description} onChange={(event) => this.handleChangeOn('description', event.target.value)}></textarea>
               </label>
-              <label style={fullWidth} className="form-group">
+              <label style={fullWidth} className='form-group'>
                 Priotity
-                <select className="form-control" id="sel1" value={this.state.newTask.priority} onChange={(event) => this.handleChangeOn('priority', event.target.value)}>
+                <select className='form-control' id='sel1' value={this.state.newTask.priority} onChange={(event) => this.handleChangeOn('priority', event.target.value)}>
                   <option>Ultra Low</option>
                   <option>Low</option>
                   <option>Medium</option>
@@ -86,22 +86,22 @@ class Options extends Component {
                   <option>Ultra High</option>
                 </select>
               </label>
-              <label style={timeInput} className="form-group">
+              <label style={timeInput} className='form-group'>
                 Weeks
-                <input className="form-control" type="number" min="0" max="2" value={this.state.time.weeks} onChange={(event) => this.changeTime('weeks', event.target.value)} />
+                <input className='form-control' type='number' min='0' max='2' value={this.state.time.weeks} onChange={(event) => this.changeTime('weeks', event.target.value)} />
               </label>
-              <label style={timeInput} className="form-group">
+              <label style={timeInput} className='form-group'>
                 Days
-                <input className="form-control" type="number" min="0" max="7" value={this.state.time.days} onChange={(event) => this.changeTime('days', event.target.value)} />
+                <input className='form-control' type='number' min='0' max='7' value={this.state.time.days} onChange={(event) => this.changeTime('days', event.target.value)} />
               </label>
-              <label style={timeInput} className="form-group">
+              <label style={timeInput} className='form-group'>
                 Hours
-                <input className="form-control" type="number" min="0" max="8" value={this.state.time.hours} onChange={(event) => this.changeTime('hours', event.target.value)} />
+                <input className='form-control' type='number' min='0' max='8' value={this.state.time.hours} onChange={(event) => this.changeTime('hours', event.target.value)} />
               </label>
             </div>
-            <div className="modal-footer">
-              <button type="button" className="btn btn-primary" data-dismiss="modal" onClick={this.addTask}>Create</button>
-              <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+            <div className='modal-footer'>
+              <button type='button' className='btn btn-primary' data-dismiss='modal' onClick={this.addTask}>Create</button>
+              <button type='button' className='btn btn-default' data-dismiss='modal'>Close</button>
             </div>
           </div>
         </div>

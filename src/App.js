@@ -11,10 +11,10 @@ class App extends Component {
     let tasks = JSON.parse(localStorage.getItem('tasks')) || []
     // Standard stages
     let stages = [
-      {id: 0, name: "Todo", color: "#c10600", tasks: []},
-      {id: 1, name: "In Progress", color: "#c19600", tasks: []},
-      {id: 2, name: "QA", color: "#b1c100", tasks: []},
-      {id: 3, name: "Done", color: "#00c192", tasks: []}
+      {id: 0, name: 'Todo', color: '#c10600', tasks: []},
+      {id: 1, name: 'In Progress', color: '#c19600', tasks: []},
+      {id: 2, name: 'QA', color: '#b1c100', tasks: []},
+      {id: 3, name: 'Done', color: '#00c192', tasks: []}
     ]
     // Initializing state
     this.state = {stages, tasks}
@@ -105,11 +105,11 @@ class App extends Component {
     })
 
     return (
-      <div className="App">
+      <div className='App'>
         <Options addTask={this.addTask.bind(this)}/>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12" id="board">
+        <div className='container'>
+          <div className='row'>
+            <div className='col-md-12' id='board'>
               {stages}
             </div>
           </div>
