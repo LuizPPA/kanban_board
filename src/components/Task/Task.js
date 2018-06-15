@@ -35,6 +35,10 @@ const Task = (props) => {
     "color": "white"
   }
 
+  const modalFooter = {
+    "textAlign": "left"
+  }
+
   const button = {
     "margin": "5px"
   }
@@ -72,12 +76,10 @@ const Task = (props) => {
           </div>
           <div className="modal-body">
             <p>{task.description}</p>
+            <p>Duration: <span style={time}>{task.time}</span></p>
+            <p>Priority: <span style={priority}>{task.priority}</span></p>
           </div>
-          <div className="modal-footer">
-            <div className="col-md-12">
-              <p>Duration: <span style={time}>{task.time}</span></p>
-              <p>Priority: <span style={priority}>{task.priority}</span></p>
-            </div>
+          <div className="modal-footer" style={modalFooter}>
             <div className="col-md-12">
               <button type="button" className="btn btn-danger" style={button} data-dismiss="modal" onClick={() => props.remove(task.id)}>Delete</button>
               <button type="button" className="btn btn-neutral dropdown-toggle" style={button} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
