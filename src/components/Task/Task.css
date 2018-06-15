@@ -1,0 +1,23 @@
+.name {
+  fontSize: 18px;
+  padding: 5px;
+  background-color: rgb(221, 221, 221);
+}
+
+.description {
+  max-height: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.details {
+  overflow: auto;
+  max-height: 30vh;
+  white-space: normal;
+}
+
+.task-info {
+  text-transform: uppercase;
+  padding: 5px;
+}
