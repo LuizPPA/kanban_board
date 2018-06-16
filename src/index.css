@@ -6,14 +6,6 @@ body {
 label {
   display: inline-block;
 }
-/* Dashboard task view */
-.card {
-  cursor: pointer;
-  background-color: white;
-  padding: 0;
-  margin-bottom: 15px;
-  box-shadow: 0px 0px 8px 3px rgb(235, 235, 235);
-}
 /* Task modal */
 .modal-panel {
   background-color: white;
@@ -23,27 +15,6 @@ label {
   max-height: 90vh;
   margin: auto;
   margin-top: 10vh;
-}
-/* Options bar */
-.bar {
-  width: 100vw;
-  height: 10vh;
-  background-color: #940000;
-}
-/* Option button */
-.icon {
-  cursor: pointer;
-  margin: 2vh 0 2vh 2vw;
-  font-size: 6vh;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-}
-.option {
-  cursor: pointer;
-  margin: 2vh 2vw 2vh 0;
-  font-size: 4vh;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
 }
 /* Override some bootstrap classes */
 .modal-footer {

@@ -1,0 +1,21 @@
+/* Options bar */
+.bar {
+  width: 100vw;
+  height: 10vh;
+  background-color: #940000;
+}
+/* Option buttons */
+.icon {
+  cursor: pointer;
+  margin: 2vh 0 2vh 2vw;
+  font-size: 6vh;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+.option {
+  cursor: pointer;
+  margin: 2vh 2vw 2vh 0;
+  font-size: 4vh;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}

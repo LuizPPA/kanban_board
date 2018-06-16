@@ -1,23 +1,30 @@
+/* Dashboard task view */
+.card {
+  cursor: pointer;
+  background-color: white;
+  padding: 0;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 8px 3px rgb(225, 225, 225);
+}
+/* Task info view */
 .name {
   fontSize: 18px;
   padding: 5px;
   background-color: rgb(221, 221, 221);
 }
-
 .description {
   max-height: 100px;
   text-overflow: ellipsis;
   overflow: hidden;
   padding: 5px;
 }
-
+.task-info {
+  text-transform: uppercase;
+  padding: 5px;
+}
+/* Task modal */
 .details {
   overflow: auto;
   max-height: 30vh;
   white-space: normal;
-}
-
-.task-info {
-  text-transform: uppercase;
-  padding: 5px;
 }
