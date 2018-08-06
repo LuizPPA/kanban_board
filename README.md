@@ -16,4 +16,4 @@ Run ```npm run build``` to generate a production build at /build.
 
 ## Contribute
 
-Bug reports, suggestions (please [create an issue](https://github.com/PhariSolutions/Phari-Doc-Gen/issues/new)) and pull requests are welcome.
+Bug reports, suggestions (please [create an issue](https://github.com/LuizPPA/kanban_board/issues/new)) and pull requests are welcome.
