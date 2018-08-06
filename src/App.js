@@ -18,6 +18,9 @@ class App extends Component {
     ]
     // Initializing state
     this.state = {stages, tasks}
+    this.changeStage = this.changeStage.bind(this)
+    this.removeTask = this.removeTask.bind(this)
+    this.addTask = this.addTask.bind(this)
   }
 
   // Check if a task match the requisites berfore it can be added
@@ -92,8 +95,8 @@ class App extends Component {
       })
       // Then push the stage itself
       stages.push(
-        <Stage  taskChangeStage={this.changeStage.bind(this)}
-                removeTask={this.removeTask.bind(this)}
+        <Stage  taskChangeStage={this.changeStage}
+                removeTask={this.removeTask}
                 id={stage.id}
                 name={stage.name}
                 color={stage.color}
@@ -106,7 +109,7 @@ class App extends Component {
 
     return (
       <div className='App'>
-        <Options addTask={this.addTask.bind(this)}/>
+        <Options addTask={this.addTask}/>
         <div className='container'>
           <div className='row'>
             <div className='col-md-12' id='board'>
