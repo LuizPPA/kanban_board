@@ -27,7 +27,7 @@ const Stage = (props) => {
     'marginTop': '45%'
   }
 
-  // Add a gray border to the left if stage isn't hte first
+  // Add a gray border to the left of the section if stage isn't hte first
   if (props.id && document.documentElement.clientWidth > 991) {
     section['borderLeft'] = '1px solid #ccc'
   }

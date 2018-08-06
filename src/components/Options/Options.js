@@ -7,7 +7,23 @@ class Options extends Component {
     super(props)
     // Set callback to task creation
     this.addTask = () => {
+      let newTask = {}
+      Object.assign(newTask, this.state.newTask)
       props.addTask(this.state.newTask)
+      this.state = {
+        newTask: {
+          name: '',
+          description: '',
+          priority: 'Ultra Low',
+          stage_id: 0,
+          time: ''
+        },
+        time: {
+          weeks: 0,
+          days: 0,
+          hours: 0
+        }
+      }
     }
     // Set initial state
     this.state = {
