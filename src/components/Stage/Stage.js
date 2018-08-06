@@ -17,6 +17,7 @@ const Stage = (props) => {
   const title = {
     'color': 'rgb(60, 60, 60)',
     'fontSize': '22px',
+    'marginTop': '28px',
     'borderBottom': '2px solid '+props.color
   }
 
