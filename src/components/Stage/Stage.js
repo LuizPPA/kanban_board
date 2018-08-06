@@ -10,7 +10,7 @@ const Stage = (props) => {
 
   const innerScroll = {
     'overflow': 'auto',
-    'height': '90%',
+    'height': '80%',
     'padding': '3%'
   }
 
